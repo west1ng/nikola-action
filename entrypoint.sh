@@ -33,6 +33,9 @@ else
     pip install "Nikola[extras]"
 fi
 
+echo "==> Attempting to install Pandoc..."
+sudo apt-get install -y pandoc
+
 echo "==> Building site..."
 nikola build
 
