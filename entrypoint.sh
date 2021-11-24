@@ -28,6 +28,7 @@ echo "==> Installing requirements..."
 if [[ -f "requirements.txt" ]]; then
     # Since people might type just 'nikola', we force ghp-import2 to be installed.
     pip install -r requirements.txt ghp-import2
+    pip install "Nikola[extras]"
 else
     pip install "Nikola[extras]"
 fi
