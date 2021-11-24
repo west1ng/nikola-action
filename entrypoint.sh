@@ -34,6 +34,7 @@ else
 fi
 
 echo "==> Attempting to install Pandoc..."
+apt-get update && apt-get -y install sudo
 sudo apt-get install -y pandoc
 
 echo "==> Building site..."
